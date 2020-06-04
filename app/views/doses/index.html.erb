@@ -1,0 +1,16 @@
+<h1>Doses</h1>
+
+<ul>
+  <li>
+<% @doses.each do |cocktail| %>
+      <tr>
+        <td>
+          <%= dose.name %>
+        </td>
+        <td>
+          <%= link_to 'Show', dose_path(dose) %>
+        </td>
+      </tr>
+    <% end %>
+  </li>
+</ul>
